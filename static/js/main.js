@@ -1,5 +1,5 @@
 /**
- * Elegance Salon & Spa
+ * Elegance Salon & Spa Infonix Cloud
  * Main JavaScript File
  */
 
