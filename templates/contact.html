@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us - Elegance Salon & Spa{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title">Contact Us</h1>
+        <p class="page-subtitle">Get in touch for appointments, inquiries, or more information</p>
+    </div>
+</section>
+
+<!-- Contact Information Section -->
+<section class="contact-info section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="contact-title">Visit Us</h3>
+                    <p class="contact-text">123 Beauty Lane<br>Styleville, NY 10001<br>United States</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="contact-title">Call Us</h3>
+                    <p class="contact-text">Phone: (555) 123-4567<br>Toll-Free: (800) 987-6543</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="contact-title">Email Us</h3>
+                    <p class="contact-text">info@elegancesalon.com<br>appointments@elegancesalon.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hours Section -->
+<section class="hours-section section-padding bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <div class="hours-card">
+                    <h2 class="section-title text-center mb-4">Business Hours</h2>
+                    <ul class="hours-list">
+                        <li><span>Monday - Friday</span><span>9:00 AM - 8:00 PM</span></li>
+                        <li><span>Saturday</span><span>10:00 AM - 6:00 PM</span></li>
+                        <li><span>Sunday</span><span>10:00 AM - 4:00 PM</span></li>
+                    </ul>
+                    <p class="hours-note text-center mt-3">Holiday hours may vary. Please call to confirm.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="contact-form-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="section-title text-center mb-4">Send Us a Message</h2>
+                <form method="POST" action="{{ url_for('contact') }}" class="contact-form">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <select class="form-select" id="subject" name="subject">
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Appointment Request">Appointment Request</option>
+                            <option value="Service Information">Service Information</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section class="map-section section-padding bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title text-center mb-4">Find Us</h2>
+                <div class="map-container elegant-card">
+                    <!-- Placeholder for map -->
+                    <div class="placeholder-map">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Interactive map would be displayed here.<br>
+                        <small>Located at 123 Beauty Lane, Styleville, NY 10001</small></p>
+                    </div>
+                </div>
+                <p class="text-center mt-3">Located in the heart of Styleville, our salon is easily accessible with ample parking available. We're just a short walk from the Styleville Metro Station.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Social Media Section -->
+<section class="social-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title">Connect With Us</h2>
+                <p class="mb-4">Follow us on social media for the latest updates, beauty tips, and inspiration.</p>
+                <div class="social-links large">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100">
+  <!-- Elegance Salon Logo -->
+  <style>
+    .primary { fill: #2C3E50; }
+    .secondary { fill: #E74C3C; }
+    .accent { fill: #F1C40F; }
+    .text-primary { font-family: 'Playfair Display', serif; font-weight: 700; }
+    .text-secondary { font-family: 'Lato', sans-serif; font-weight: 300; letter-spacing: 2px; }
+  </style>
+  
+  <!-- Decorative Element -->
+  <path class="accent" d="M25,50 C25,30 50,15 75,25 C100,35 125,25 150,35 C175,45 175,65 150,75 C125,85 100,75 75,65 C50,55 25,70 25,50 Z" opacity="0.2" />
+  
+  <!-- Stylized Scissors -->
+  <g class="primary" transform="translate(30, 40) scale(0.6)">
+    <path d="M30,10 L70,50 L30,90 C20,80 20,20 30,10 Z" opacity="0.7" />
+    <path d="M170,10 L130,50 L170,90 C180,80 180,20 170,10 Z" opacity="0.7" />
+    <circle cx="100" cy="50" r="8" class="secondary" />
+  </g>
+  
+  <!-- Logo Text -->
+  <text x="100" y="55" class="text-primary primary" text-anchor="middle" font-size="28">Elegance</text>
+  <text x="100" y="75" class="text-secondary primary" text-anchor="middle" font-size="12">SALON & SPA</text>
+  
+  <!-- Decorative Line -->
+  <line x1="70" y1="80" x2="130" y2="80" stroke="#E74C3C" stroke-width="2" />
+</svg>
